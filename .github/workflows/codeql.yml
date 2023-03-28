@@ -40,8 +40,6 @@ jobs:
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
